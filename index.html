@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kushwanth Sai | Creative Developer</title>
+    <meta name="description"
+        content="Portfolio of Kushwanth Sai - Web Developer, Data Scientist, and AI Engineer turning ideas into scalable digital products.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@400;700&family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;600;700&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <div id="intro-overlay">
+        <div class="intro-name">
+            KUSHWANTH'S PORTFOLIO
+        </div>
+    </div>
+
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress"></div>
+
+    <!-- Main Content Wrapper to facilitate zoom effect -->
+    <div id="wrapper">
+        <canvas id="bg-canvas"></canvas>
+        <div class="noise-overlay"></div>
+
+        <header class="glass-nav">
+            <a href="#" class="logo-link">
+                <div class="logo"><i class="bi bi-code-slash"></i> KUSHWANTH'S PORTFOLIO<span
+                        class="accent-dot">.</span></div>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#publications" class="nav-link">Publications</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#contact" class="nav-link btn-glow">Contact Me</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-toggle">
+                <i class="bi bi-list"></i>
+            </div>
+        </header>
+
+        <main>
+            <section id="hero" class="hero-section">
+                <div class="hero-content">
+                    <p class="greeting">Hello, I am</p>
+                    <h1 class="hero-name" data-text="Kushwanth Sai Boddu">Kushwanth Sai Boddu</h1>
+                    <h1 class="headline">
+                        I turn ideas into <br>
+                        <span class="highlight-text typing-text"></span>
+                    </h1>
+                    <p class="subtitle">Python Programming | Web Development | AI & Data Science</p>
+
+                    <div class="cta-container">
+                        <a href="#projects" class="primary-btn">View My Work <i class="bi bi-arrow-right"></i></a>
+                        <a href="#contact" class="secondary-btn">Let's Talk</a>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="bi bi-github"></i></a>
+                    <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+                    <a href="#" class="social-icon"><i class="bi bi-envelope-fill"></i></a>
+                </div>
+            </section>
+
+            <section id="about" class="section">
+                <h2 class="section-title" data-text="About Me">About Me</h2>
+                <div class="container about-container">
+                    <div class="about-text glass-card reveal-on-scroll left">
+
+                        <p>I'm <span class="accent">Kushwanth Sai</span>, a Python-focused developer with a strong
+                            foundation in <span class="accent">Artificial Intelligence</span> and <span
+                                class="accent">Data Science</span>. I enjoy turning ideas into practical Python projects
+                            that solve real-world problems using clean, efficient, and scalable code.</p>
+
+                        <p>I have hands-on experience with Python, SQL, Flask, HTML, and CSS, and I've worked on
+                            projects ranging from a multilingual chatbot-based ticketing system with secure payments to
+                            a machine learning dashboard for natural disaster prediction.</p>
+
+                        <p>I'm particularly interested in <span class="accent">data-driven development</span>,
+                            automation, and intelligent systems. I like learning by building, experimenting, and
+                            improving existing solutions. I've also co-authored research papers in international
+                            journals, which reflects my interest in research-backed and impactful technology.</p>
+
+                        <p>As a Python Developer, my goal is to contribute to meaningful projects, grow with a
+                            collaborative team, and continuously improve my technical and problem-solving skills while
+                            building reliable and innovative software.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Resume Section -->
+            <section id="resume" class="section" style="min-height: auto; padding: 40px 20px;">
+                <div class="container" style="max-width: 600px;">
+                    <div class="glass-card reveal-on-scroll" style="text-align: center; padding: 40px;">
+                        <i class="bi bi-file-earmark-person-fill"
+                            style="font-size: 3rem; color: #2997ff; margin-bottom: 20px; display: block;"></i>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 15px;">My Resume</h3>
+                        <p style="color: var(--text-dim); margin-bottom: 25px;">Get a detailed overview of my skills,
+                            experience, and qualifications.</p>
+                        <div class="resume-btn-container"
+                            style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                            <a href="Kushwanth's CV.pdf" target="_blank" class="primary-btn"
+                                style="display: inline-flex; align-items: center; gap: 8px;">
+                                <i class="bi bi-eye-fill"></i> View Resume
+                            </a>
+                            <a href="Kushwanth's CV.pdf" download class="secondary-btn"
+                                style="display: inline-flex; align-items: center; gap: 8px;">
+                                <i class="bi bi-download"></i> Download
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Education Section -->
+            <section id="education" class="section">
+                <h2 class="section-title">Education</h2>
+                <div class="container" style="max-width: 900px;">
+
+                    <!-- B.Tech -->
+                    <div class="glass-card reveal-on-scroll" style="margin-bottom: 20px;">
+                        <div style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap;">
+                            <img src="presidency-logo.png" alt="Presidency University"
+                                style="width: 80px; height: 80px; object-fit: contain; background: #fff; border-radius: 10px; padding: 5px;">
+                            <div>
+                                <h3 style="color: var(--primary-accent); margin-bottom: 5px;">Bachelor's of Technology
+                                    in Information Science (AI & DS)</h3>
+                                <p style="font-size: 1.1rem; margin-bottom: 5px;">Presidency University, Bengaluru</p>
+                                <p style="color: var(--text-dim);">2021 - 2025</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Grade 12 -->
+                    <div class="glass-card reveal-on-scroll delay-1" style="margin-bottom: 20px;">
+                        <div style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap;">
+                            <img src="narayana-logo.png" alt="Narayana"
+                                style="width: 80px; height: 80px; object-fit: contain; background: #fff; border-radius: 10px; padding: 5px;">
+                            <div>
+                                <h3 style="color: var(--primary-accent); margin-bottom: 5px;">Grade 12 (MPC)</h3>
+                                <p style="font-size: 1.1rem; margin-bottom: 5px;">Narayana Junior College, Tirupati</p>
+                                <p style="color: var(--text-dim);">2019 - 2021</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- High School -->
+                    <div class="glass-card reveal-on-scroll delay-2">
+                        <div style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap;">
+                            <img src="accord-logo.png" alt="Accord School"
+                                style="width: 80px; height: 80px; object-fit: contain; background: #fff; border-radius: 10px; padding: 5px;">
+                            <div>
+                                <h3 style="color: var(--primary-accent); margin-bottom: 5px;">High School</h3>
+                                <p style="font-size: 1.1rem; margin-bottom: 5px;">Accord School, Tirupati</p>
+                                <p style="color: var(--text-dim);">2018 - 2019</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- AI & Data Science Journey Section -->
+            <section id="journey" class="section">
+                <h2 class="section-title"><i class="bi bi-mortarboard-fill"></i> Learning Journey</h2>
+                <div class="container"
+                    style="max-width: 1100px; display: flex; gap: 50px; align-items: center; flex-wrap: wrap; justify-content: center;">
+                    <div class="reveal-on-scroll" style="flex: 1; min-width: 320px; max-width: 450px;">
+                        <div class="glass-card"
+                            style="padding: 10px; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.6); border: 1px solid rgba(255,255,255,0.1);">
+                            <img src="graduation.jpg" alt="Graduation Convocation"
+                                style="width: 100%; height: auto; border-radius: 12px; display: block; filter: contrast(1.1);">
+                        </div>
+                    </div>
+                    <div class="reveal-on-scroll delay-1" style="flex: 1.5; min-width: 320px; text-align: left;">
+                        <h3
+                            style="color: var(--primary-accent); margin-bottom: 25px; font-size: 1.8rem; font-weight: 700;">
+                            B.Tech Journey in AI & Data Science</h3>
+                        <p style="color: var(--text-color); line-height: 1.8; margin-bottom: 20px; font-size: 1.05rem;">
+                            My B.Tech journey in <strong>Artificial Intelligence and Data Science</strong> shaped the
+                            way I approach data, logic, and problem-solving.
+                        </p>
+                        <p style="color: var(--text-dim); line-height: 1.8; margin-bottom: 20px; font-size: 1.05rem;">
+                            During this period, I built a strong foundation in <span class="accent">Python
+                                programming</span>, consistently practicing logic and pattern-based problems to improve
+                            analytical thinking. I explored key concepts in data analysis, machine learning, and model
+                            building, learning how data can be transformed into meaningful insights.
+                        </p>
+                        <p style="color: var(--text-dim); line-height: 1.8; margin-bottom: 20px; font-size: 1.05rem;">
+                            I gained hands-on experience by working on <span class="accent">AI-driven projects</span>,
+                            including predictive models and data-focused applications, which helped me understand the
+                            practical side of machine learning beyond theory. Learning the fundamentals of data
+                            structures and algorithms further improved my ability to write efficient and structured
+                            code.
+                        </p>
+                        <p style="color: var(--text-dim); line-height: 1.8; font-size: 1.05rem;">
+                            This journey helped me develop a data-driven mindset, curiosity to explore patterns, and the
+                            confidence to apply AI and data science concepts to real-world problems.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Experience / Internship Section -->
+            <section id="experience" class="section">
+                <h2 class="section-title">Experience</h2>
+                <div class="container" style="max-width: 900px;">
+                    <div class="glass-card reveal-on-scroll">
+                        <div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap;">
+                            <img src="pentogon-logo.png" alt="Pentogon Space"
+                                style="width: 80px; height: 80px; object-fit: contain; border-radius: 10px;">
+                            <div style="flex: 1;">
+                                <h3 style="color: var(--primary-accent); margin-bottom: 5px;">Python Full Stack Trainee
+                                </h3>
+                                <p style="font-size: 1.1rem; margin-bottom: 5px;">Pentogon Space, Bengaluru</p>
+                                <p style="color: var(--text-dim); margin-bottom: 15px;">Jun 2025 - Jan 2026</p>
+                                <ul style="line-height: 1.8; color: var(--text-dim); padding-left: 20px;">
+                                    <li style="margin-bottom: 10px;">Worked as a Python Full Stack Developer Trainee,
+                                        gaining hands-on experience in building web applications using <span
+                                            class="accent">Django</span>, <span class="accent">HTML</span>, <span
+                                            class="accent">CSS</span>, <span class="accent">JavaScript</span>, and <span
+                                            class="accent">MySQL</span>.</li>
+                                    <li style="margin-bottom: 10px;">Developed dynamic web pages, integrated REST APIs,
+                                        and managed backend logic and databases.</li>
+                                    <li style="margin-bottom: 10px;">Learned Python programming, solving <span
+                                            class="accent">30+ logic and pattern-based problems</span> to strengthen
+                                        core problem-solving skills.</li>
+                                    <li style="margin-bottom: 10px;">Gained a strong understanding of <span
+                                            class="accent">Data Structures and Algorithms</span> fundamentals, focusing
+                                        on logical thinking and efficient coding practices.</li>
+                                    <li>Collaborated with a team on real-time projects, improving full stack development
+                                        and teamwork skills.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Certifications Section -->
+            <section id="certifications" class="section">
+                <h2 class="section-title">Certifications & Courses</h2>
+                <div class="container"
+                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 25px; max-width: 1000px;">
+
+                    <!-- Certification 1: Python Essentials -->
+                    <a href="https://www.credly.com/badges/7dc709ae-eb52-4e51-89eb-403275267fe5/public_url"
+                        target="_blank" class="cert-card glass-card reveal-on-scroll">
+                        <div class="cert-logo"
+                            style="background: linear-gradient(135deg, #0d6efd, #0099ff); display: flex; align-items: center; justify-content: center; height: 120px; border-radius: 10px; margin-bottom: 15px;">
+                            <i class="bi bi-patch-check-fill" style="font-size: 3rem; color: #fff;"></i>
+                        </div>
+                        <h4 style="font-size: 1.1rem; margin-bottom: 8px; font-weight: 600;">Python Essentials</h4>
+                        <p style="color: #6ea8fe; font-size: 0.9rem;">Cisco Networking Academy | 2025</p>
+                    </a>
+
+                    <!-- Certification 2: Programming Fundamentals Part-1 -->
+                    <a href="https://drive.google.com/file/d/15vq14I8J7n8MGsYafIM6aSKq3Gnudf1d/view" target="_blank"
+                        class="cert-card glass-card reveal-on-scroll delay-1">
+                        <div class="cert-logo"
+                            style="background: #fff; display: flex; align-items: center; justify-content: center; height: 120px; border-radius: 10px; margin-bottom: 15px;">
+                            <span style="font-size: 1.8rem; font-weight: 700; color: #0066cc;">Infosys</span>
+                        </div>
+                        <h4 style="font-size: 1.1rem; margin-bottom: 8px; font-weight: 600;">Programming Fundamentals
+                            using Python (Part-1)</h4>
+                        <p style="color: #6ea8fe; font-size: 0.9rem;">Infosys | 2025</p>
+                    </a>
+
+                    <!-- Certification 3: Programming Fundamentals Part-2 -->
+                    <a href="https://drive.google.com/file/d/1lo638FoTfb8koE0dRBRxGbZFUu6vTgly/view" target="_blank"
+                        class="cert-card glass-card reveal-on-scroll delay-2">
+                        <div class="cert-logo"
+                            style="background: #fff; display: flex; align-items: center; justify-content: center; height: 120px; border-radius: 10px; margin-bottom: 15px;">
+                            <span style="font-size: 1.8rem; font-weight: 700; color: #0066cc;">Infosys</span>
+                        </div>
+                        <h4 style="font-size: 1.1rem; margin-bottom: 8px; font-weight: 600;">Programming Fundamentals
+                            using Python (Part-2)</h4>
+                        <p style="color: #6ea8fe; font-size: 0.9rem;">Infosys | 2025</p>
+                    </a>
+
+                    <!-- Certification 4: Web Development -->
+                    <a href="https://drive.google.com/file/d/1Ht2kPJrsjfF8wG3Jl1Bnat1db3cUCfSv/view" target="_blank"
+                        class="cert-card glass-card reveal-on-scroll delay-3">
+                        <div class="cert-logo"
+                            style="background: #fff; display: flex; align-items: center; justify-content: center; height: 120px; border-radius: 10px; margin-bottom: 15px;">
+                            <span style="font-size: 1.5rem; font-weight: 600; color: #2196F3;">EdiGlobe</span>
+                        </div>
+                        <h4 style="font-size: 1.1rem; margin-bottom: 8px; font-weight: 600;">Web Development Course</h4>
+                        <p style="color: #6ea8fe; font-size: 0.9rem;">Ediglobe | 2024</p>
+                    </a>
+
+                </div>
+            </section>
+
+            <section id="skills" class="section">
+                <h2 class="section-title">Skills</h2>
+                <div class="container skills-wrapper">
+                    <div class="skill-category reveal-on-scroll">
+                        <h3>Languages & Web</h3>
+                        <div class="skill-bars">
+                            <div class="skill-bar-container">
+                                <div class="skill-info"><span>Python</span><span>95%</span></div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar-container">
+                                <div class="skill-info"><span>HTML / CSS</span><span>90%</span></div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar-container">
+                                <div class="skill-info"><span>SQL (MySQL, PostgreSQL)</span><span>85%</span></div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category reveal-on-scroll delay-1">
+                        <h3>AI & Frameworks</h3>
+                        <div class="skill-bars">
+                            <div class="skill-bar-container">
+                                <div class="skill-info"><span>Flask</span><span>90%</span></div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar-container">
+                                <div class="skill-info"><span>Django</span><span>80%</span></div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar-container">
+                                <div class="skill-info"><span>Pandas / NumPy / Matplotlib</span><span>85%</span></div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar-container">
+                                <div class="skill-info"><span>Data Structures & Algorithms</span><span>80%</span></div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="section">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="container"
+                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; max-width: 1100px;">
+
+                    <!-- Project 1: Proactive Disaster Detection -->
+                    <a href="https://github.com/kush2727/Proactive-Disaster-Detection" target="_blank"
+                        class="project-card-new glass-card reveal-on-scroll">
+                        <div class="project-image"
+                            style="background: linear-gradient(135deg, #1a1a2e, #16213e); height: 180px; border-radius: 12px; margin-bottom: 20px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                            <i class="bi bi-cloud-lightning-rain-fill" style="font-size: 4rem; color: #ff6b6b;"></i>
+                        </div>
+                        <h3 style="color: #ff9f43; font-size: 1.3rem; margin-bottom: 15px; font-weight: 600;">Proactive
+                            Disaster Detection</h3>
+                        <p style="color: var(--text-dim); line-height: 1.7; font-size: 0.95rem;">A system designed to
+                            predict and detect natural disasters in advance using satellite data and machine learning,
+                            enabling timely alerts and mitigation strategies to minimize damage and save lives.</p>
+                        <div class="tags" style="margin-top: 15px;">
+                            <span>Python</span><span>Streamlit</span><span>ML</span>
+                        </div>
+                    </a>
+
+                    <!-- Project 2: Online Chat Based Ticketing System -->
+                    <a href="https://github.com/kush2727/online-chatbot-based-ticketing-system" target="_blank"
+                        class="project-card-new glass-card reveal-on-scroll delay-1">
+                        <div class="project-image"
+                            style="background: linear-gradient(135deg, #2d3436, #636e72); height: 180px; border-radius: 12px; margin-bottom: 20px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                            <i class="bi bi-chat-dots-fill" style="font-size: 4rem; color: #74b9ff;"></i>
+                        </div>
+                        <h3 style="color: #74b9ff; font-size: 1.3rem; margin-bottom: 15px; font-weight: 600;">Online
+                            Chat Based Ticketing System</h3>
+                        <p style="color: var(--text-dim); line-height: 1.7; font-size: 0.95rem;">A Museum Ticketing
+                            System automates ticket booking, allowing visitors to book tickets online or on-site, select
+                            time slots, and make payments digitally. It provides real-time tracking of tickets, visitor
+                            statistics, and smooth entry management.</p>
+                        <div class="tags" style="margin-top: 15px;">
+                            <span>Flask</span><span>Bootstrap</span><span>SQLite</span>
+                        </div>
+                    </a>
+
+                    <!-- Project 3: Movie Recommendation System -->
+                    <a href="https://github.com/kush2727/MOVIE-RECOMMENDATION-SYSTEM" target="_blank"
+                        class="project-card-new glass-card reveal-on-scroll delay-2">
+                        <div class="project-image"
+                            style="background: linear-gradient(135deg, #f39c12, #e74c3c); height: 180px; border-radius: 12px; margin-bottom: 20px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                            <i class="bi bi-film" style="font-size: 4rem; color: #fff;"></i>
+                        </div>
+                        <h3 style="color: #f39c12; font-size: 1.3rem; margin-bottom: 15px; font-weight: 600;">Movie
+                            Recommendation System</h3>
+                        <p style="color: var(--text-dim); line-height: 1.7; font-size: 0.95rem;">A Genre-Based Movie
+                            Recommendation System suggests movies to users based on their selected or preferred genres.
+                            By filtering movies according to genres and user preferences, it helps users quickly
+                            discover relevant movies, improving their viewing experience and satisfaction.</p>
+                        <div class="tags" style="margin-top: 15px;">
+                            <span>Python</span><span>Pandas</span><span>Scikit-learn</span>
+                        </div>
+                    </a>
+
+                </div>
+            </section>
+
+            <section id="publications" class="section">
+                <h2 class="section-title"><i class="bi bi-journals"></i> Publications</h2>
+                <p style="color: var(--text-dim); margin-bottom: 40px;">Published research works and papers</p>
+                <div class="container" style="max-width: 900px;">
+
+                    <!-- Publication 1: Proactive Disaster Detection -->
+                    <div class="glass-card reveal-on-scroll publication-card" style="margin-bottom: 30px;">
+                        <div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap;">
+                            <img src="ijsrem-logo.png" alt="IJSREM"
+                                style="width: 80px; height: 80px; object-fit: contain; background: #fff; border-radius: 10px; padding: 5px;">
+                            <div style="flex: 1;">
+                                <h3 style="color: #2997ff; font-size: 1.4rem; margin-bottom: 10px; font-weight: 600;">
+                                    Proactive Disaster Detection</h3>
+                                <p style="color: var(--text-color); margin-bottom: 5px;">Boddu Kushwanth Sai, Vadlamudi
+                                    Narendra, Abhi CN, Rahul.</p>
+                                <p style="color: var(--text-dim); font-style: italic; margin-bottom: 15px;">IJSERM, 2024
+                                </p>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; gap: 15px; flex-wrap: wrap; margin-bottom: 15px;">
+                            <button class="abstract-toggle" onclick="toggleAbstract('abstract1')"
+                                style="background: #2d3436; color: #fff; border: none; padding: 10px 20px; border-radius: 8px; cursor: pointer; font-size: 0.9rem;">Show
+                                Abstract</button>
+                            <a href="https://ijsrem.com/download/proactive-disaster-detection/#1665222436327-e14bb5c1-2267"
+                                target="_blank" class="view-pub-btn"
+                                style="background: #00b894; color: #fff; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-size: 0.9rem; display: inline-flex; align-items: center; gap: 5px;">View
+                                Publication <i class="bi bi-arrow-right"></i></a>
+                        </div>
+
+                        <div id="abstract1" class="abstract-content"
+                            style="display: none; background: rgba(0,0,0,0.3); padding: 20px; border-radius: 10px; border-left: 3px solid #2997ff;">
+                            <p style="font-weight: 600; margin-bottom: 10px;">Abstract:</p>
+                            <p style="color: var(--text-dim); line-height: 1.7;">This paper presents the Disaster
+                                Prediction Dashboard, a machine learning tool for forecasting risks from hurricanes,
+                                earthquakes, and floods. It supports user-uploaded data, handles missing values, and
+                                uses models like random forest and logistic regression. With a simple interface and
+                                clear risk indicators, it enhances disaster preparedness and decision-making.</p>
+                        </div>
+                    </div>
+
+                    <!-- Publication 2: Online Chatbot Based Ticketing System -->
+                    <div class="glass-card reveal-on-scroll delay-1 publication-card">
+                        <div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap;">
+                            <img src="ijsrem-logo.png" alt="IJSREM"
+                                style="width: 80px; height: 80px; object-fit: contain; background: #fff; border-radius: 10px; padding: 5px;">
+                            <div style="flex: 1;">
+                                <h3 style="color: #2997ff; font-size: 1.4rem; margin-bottom: 10px; font-weight: 600;">
+                                    Online Chatbot Based Ticketing System</h3>
+                                <p style="color: var(--text-color); margin-bottom: 5px;">Boddu Kushwanth Sai, Vadlamudi
+                                    Narendra, Abhi CN, Rahul.</p>
+                                <p style="color: var(--text-dim); font-style: italic; margin-bottom: 15px;">IJSERM, 2025
+                                </p>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; gap: 15px; flex-wrap: wrap; margin-bottom: 15px;">
+                            <button class="abstract-toggle" onclick="toggleAbstract('abstract2')"
+                                style="background: #2d3436; color: #fff; border: none; padding: 10px 20px; border-radius: 8px; cursor: pointer; font-size: 0.9rem;">Show
+                                Abstract</button>
+                            <a href="https://ijsrem.com/download/online-chatbot-based-ticketing-system/" target="_blank"
+                                class="view-pub-btn"
+                                style="background: #00b894; color: #fff; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-size: 0.9rem; display: inline-flex; align-items: center; gap: 5px;">View
+                                Publication <i class="bi bi-arrow-right"></i></a>
+                        </div>
+
+                        <div id="abstract2" class="abstract-content"
+                            style="display: none; background: rgba(0,0,0,0.3); padding: 20px; border-radius: 10px; border-left: 3px solid #2997ff;">
+                            <p style="font-weight: 600; margin-bottom: 10px;">Abstract:</p>
+                            <p style="color: var(--text-dim); line-height: 1.7;">This paper presents a multilingual
+                                chatbot-based museum ticketing system that automates ticket booking, allowing visitors
+                                to book tickets online or on-site, select time slots, and make payments digitally with
+                                QR-coded digital tickets for seamless entry management.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+            <section id="contact" class="section">
+                <div class="container contact-wrapper reveal-on-scroll" style="max-width: 700px;">
+                    <h2 class="section-title">Let's Connect</h2>
+                    <p style="color: var(--text-dim); line-height: 1.8; margin-bottom: 30px;">
+                        I enjoy building reliable, data-driven applications with <span class="accent">Python</span>,
+                        <span class="accent">Web technologies</span>, and <span class="accent">AI & Data
+                            Science</span>.<br><br>
+                        Always open to meaningful discussions, learning opportunities, and impactful work.
+                    </p>
+                    <a href="https://linkedin.com/in/kushwanthsai" target="_blank" class="primary-btn pulse-btn"
+                        style="display: inline-flex; align-items: center; gap: 10px;">
+                        Connect
+                    </a>
+
+                    <div class="social-links" style="margin-top: 30px;">
+                        <a href="https://linkedin.com/in/kushwanthsai" target="_blank" class="social-icon"><i
+                                class="bi bi-linkedin"></i></a>
+                        <a href="https://github.com/kush2727" target="_blank" class="social-icon"><i
+                                class="bi bi-github"></i></a>
+                        <a href="mailto:kushwanth17@gmail.com" class="social-icon"><i
+                                class="bi bi-envelope-fill"></i></a>
+                    </div>
+                </div>
+            </section>
+
+            <footer>
+                <p>&copy; 2026 Kushwanth Sai. </p>
+            </footer>
+        </main>
+
+        <script src="main.js"></script>
+    </div> <!-- End Wrapper -->
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" title="Back to Top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+</body>
+
+</html>
