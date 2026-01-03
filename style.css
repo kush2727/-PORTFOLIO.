@@ -1119,6 +1119,7 @@ a.project-card-new:hover {
         gap: 15px;
         width: 100%;
         max-width: 280px;
+        margin: 0 auto;
     }
 
     .primary-btn,
@@ -1142,6 +1143,12 @@ a.project-card-new:hover {
     .about-text,
     #journey .reveal-on-scroll {
         text-align: center !important;
+        min-width: 100% !important;
+    }
+
+    /* Reduce gap in journey section on mobile */
+    #journey .container {
+        gap: 30px !important;
     }
 
     .glass-card {
@@ -1156,7 +1163,9 @@ a.project-card-new:hover {
         gap: 15px !important;
     }
 
-    .glass-card img {
+    #education .glass-card img,
+    #experience .glass-card img,
+    #publications .glass-card img {
         width: 70px !important;
         height: 70px !important;
         margin-bottom: 5px;
@@ -1164,7 +1173,7 @@ a.project-card-new:hover {
         /* Remove right gap on mobile */
     }
 
-    /* Fix for Learning Journey Image */
+    /* Fix for Learning Journey Image - Ensure it takes full width */
     #journey .glass-card img {
         width: 100% !important;
         height: auto !important;
