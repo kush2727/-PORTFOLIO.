@@ -1164,6 +1164,13 @@ a.project-card-new:hover {
         /* Remove right gap on mobile */
     }
 
+    /* Fix for Learning Journey Image */
+    #journey .glass-card img {
+        width: 100% !important;
+        height: auto !important;
+        margin-bottom: 0 !important;
+    }
+
     .glass-card h3 {
         font-size: 1.15rem !important;
         text-align: center;
