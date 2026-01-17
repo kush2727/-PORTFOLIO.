@@ -191,7 +191,7 @@ a {
 }
 
 .accent {
-    color: var(--primary-accent);
+    color: inherit;
 }
 
 .glitch-text {
