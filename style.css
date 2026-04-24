@@ -603,8 +603,11 @@ a {
 
 /* Certification Cards */
 .cert-card {
-    text-align: center;
+    text-align: left;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .cert-card h4 {
@@ -617,6 +620,7 @@ a {
 
 .cert-logo {
     transition: transform 0.3s ease;
+    margin-bottom: 15px;
 }
 
 /* Project Cards as Links */
@@ -1142,7 +1146,7 @@ a.project-card-new:hover {
 
     .about-text,
     #journey .reveal-on-scroll {
-        text-align: center !important;
+        text-align: left !important;
         min-width: 100% !important;
     }
 
@@ -1158,8 +1162,8 @@ a.project-card-new:hover {
     /* Education, Experience, and Publication Cards - Centering on Mobile */
     .glass-card div[style*="display: flex"] {
         flex-direction: column !important;
-        align-items: center !important;
-        text-align: center !important;
+        align-items: center !important; /* Icons centered on mobile */
+        text-align: left !important;
         gap: 15px !important;
     }
 
@@ -1182,11 +1186,11 @@ a.project-card-new:hover {
 
     .glass-card h3 {
         font-size: 1.15rem !important;
-        text-align: center;
+        text-align: left;
     }
 
     .glass-card p {
-        text-align: center;
+        text-align: left;
     }
 
     /* Abstract content should remain left-aligned for readability */
@@ -1255,7 +1259,7 @@ a.project-card-new:hover {
     position: relative;
     border-radius: 12px;
     overflow: hidden;
-    aspect-ratio: 16 / 11;
+    aspect-ratio: 16 / 9;
     background: #0a0a0a;
 }
 
@@ -1335,18 +1339,42 @@ a.project-card-new:hover {
     border: 1px solid;
 }
 
-.itag-orange { background: rgba(255,149,0,0.1); color: #FF9500; border-color: rgba(255,149,0,0.3); }
-.itag-purple { background: rgba(155,89,182,0.1); color: #CE93D8; border-color: rgba(155,89,182,0.3); }
-.itag-blue   { background: rgba(41,151,255,0.1); color: #5AC8FA; border-color: rgba(41,151,255,0.3); }
-.itag-green  { background: rgba(0,184,148,0.1); color: #00CEC9; border-color: rgba(0,184,148,0.3); }
-.itag-red    { background: rgba(231,76,60,0.1); color: #FF7675; border-color: rgba(231,76,60,0.3); }
+.itag-orange {
+    background: rgba(255, 149, 0, 0.1);
+    color: #FF9500;
+    border-color: rgba(255, 149, 0, 0.3);
+}
+
+.itag-purple {
+    background: rgba(155, 89, 182, 0.1);
+    color: #CE93D8;
+    border-color: rgba(155, 89, 182, 0.3);
+}
+
+.itag-blue {
+    background: rgba(41, 151, 255, 0.1);
+    color: #5AC8FA;
+    border-color: rgba(41, 151, 255, 0.3);
+}
+
+.itag-green {
+    background: rgba(0, 184, 148, 0.1);
+    color: #00CEC9;
+    border-color: rgba(0, 184, 148, 0.3);
+}
+
+.itag-red {
+    background: rgba(231, 76, 60, 0.1);
+    color: #FF7675;
+    border-color: rgba(231, 76, 60, 0.3);
+}
 
 /* ---- Image Scroller ---- */
 .event-scroller-wrap {
     border-radius: 16px;
     overflow: hidden;
-    background: rgba(0,0,0,0.3);
-    border: 1px solid rgba(255,255,255,0.07);
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.07);
     padding: 16px;
 }
 
@@ -1369,7 +1397,7 @@ a.project-card-new:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
     border-radius: 12px;
     opacity: 0;
     transform: scale(1.04);
@@ -1397,8 +1425,13 @@ a.project-card-new:hover {
 }
 
 @keyframes slideProgress {
-    0%   { width: 0%; }
-    100% { width: 100%; }
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
 }
 
 /* Scroller dots */
@@ -1413,7 +1446,7 @@ a.project-card-new:hover {
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background: rgba(255,255,255,0.2);
+    background: rgba(255, 255, 255, 0.2);
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -1455,7 +1488,7 @@ a.project-card-new:hover {
 
 .session-card:hover {
     transform: translateY(-6px);
-    border-color: rgba(255,255,255,0.15);
+    border-color: rgba(255, 255, 255, 0.15);
 }
 
 .session-icon {
@@ -1515,8 +1548,8 @@ a.project-card-new:hover {
     display: flex;
     align-items: flex-start;
     gap: 14px;
-    background: rgba(0,184,148,0.05);
-    border: 1px solid rgba(0,184,148,0.1);
+    background: rgba(0, 184, 148, 0.05);
+    border: 1px solid rgba(0, 184, 148, 0.1);
     padding: 16px 20px;
     border-radius: 12px;
     transition: transform 0.2s ease;
@@ -1524,7 +1557,7 @@ a.project-card-new:hover {
 
 .takeaway-item:hover {
     transform: translateX(4px);
-    border-color: rgba(0,184,148,0.25);
+    border-color: rgba(0, 184, 148, 0.25);
 }
 
 .takeaway-item i {
@@ -1546,14 +1579,14 @@ a.project-card-new:hover {
 
 /* ---- Growth Pills ---- */
 .industry-growth {
-    text-align: center;
+    text-align: left;
 }
 
 .growth-pills {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .growth-pill {
@@ -1561,8 +1594,8 @@ a.project-card-new:hover {
     align-items: center;
     gap: 12px;
     padding: 16px 28px;
-    background: linear-gradient(135deg, rgba(41,151,255,0.1), rgba(90,200,250,0.08));
-    border: 1px solid rgba(41,151,255,0.25);
+    background: linear-gradient(135deg, rgba(41, 151, 255, 0.1), rgba(90, 200, 250, 0.08));
+    border: 1px solid rgba(41, 151, 255, 0.25);
     border-radius: 60px;
     color: #5AC8FA;
     font-weight: 600;
@@ -1577,9 +1610,9 @@ a.project-card-new:hover {
 
 .growth-pill:hover {
     transform: translateY(-4px) scale(1.03);
-    background: linear-gradient(135deg, rgba(41,151,255,0.18), rgba(90,200,250,0.14));
-    border-color: rgba(41,151,255,0.5);
-    box-shadow: 0 8px 24px rgba(41,151,255,0.2);
+    background: linear-gradient(135deg, rgba(41, 151, 255, 0.18), rgba(90, 200, 250, 0.14));
+    border-color: rgba(41, 151, 255, 0.5);
+    box-shadow: 0 8px 24px rgba(41, 151, 255, 0.2);
 }
 
 /* Responsive */
@@ -1588,12 +1621,15 @@ a.project-card-new:hover {
         flex-direction: column;
         padding: 24px;
     }
+
     .industry-event-title {
         font-size: 1.5rem;
     }
+
     .takeaway-grid {
         grid-template-columns: 1fr;
     }
+
     .industry-takeaways {
         padding: 24px;
     }

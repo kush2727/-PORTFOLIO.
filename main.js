@@ -447,6 +447,20 @@ setTimeout(typeEffect, 1500);
         });
     });
 
+    // Reset to first slide when section is visited
+    const section = document.getElementById('industry');
+    if (section) {
+        const obs = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    goTo(0);
+                    startAutoplay();
+                }
+            });
+        }, { threshold: 0.1 });
+        obs.observe(section);
+    }
+
     // Start
     startAutoplay();
 })();
