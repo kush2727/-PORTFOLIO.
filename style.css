@@ -1212,3 +1212,393 @@ a.project-card-new:hover {
         right: 20px;
     }
 }
+
+/* ===================================================
+   INDUSTRY EXPOSURE SECTION
+   =================================================== */
+
+/* Section Badge */
+.industry-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: linear-gradient(135deg, rgba(255, 149, 0, 0.15), rgba(255, 107, 0, 0.1));
+    border: 1px solid rgba(255, 149, 0, 0.3);
+    color: #FF9500;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+/* Hero Card — two-column layout */
+.industry-hero-card {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 40px;
+    border: 1px solid rgba(255, 149, 0, 0.15);
+    margin-bottom: 60px;
+}
+
+.industry-hero-left {
+    flex: 1;
+    min-width: 280px;
+    text-align: left;
+}
+
+.industry-hero-right {
+    flex: 1;
+    min-width: 280px;
+}
+
+/* AWS Event Badge */
+.aws-event-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: linear-gradient(135deg, #FF9500, #FF6B00);
+    color: #fff;
+    padding: 6px 16px;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 0.8rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.industry-event-title {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 12px;
+    line-height: 1.2;
+}
+
+.industry-year {
+    background: linear-gradient(90deg, #FF9500, #FF6B00);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.industry-role {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #2997FF;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+.industry-location {
+    color: var(--text-dim);
+    font-size: 0.9rem;
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.industry-desc {
+    color: var(--text-dim);
+    line-height: 1.8;
+    font-size: 0.97rem;
+    margin-bottom: 24px;
+}
+
+/* Topic Tags */
+.industry-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.itag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 14px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border: 1px solid;
+}
+
+.itag-orange { background: rgba(255,149,0,0.1); color: #FF9500; border-color: rgba(255,149,0,0.3); }
+.itag-purple { background: rgba(155,89,182,0.1); color: #CE93D8; border-color: rgba(155,89,182,0.3); }
+.itag-blue   { background: rgba(41,151,255,0.1); color: #5AC8FA; border-color: rgba(41,151,255,0.3); }
+.itag-green  { background: rgba(0,184,148,0.1); color: #00CEC9; border-color: rgba(0,184,148,0.3); }
+.itag-red    { background: rgba(231,76,60,0.1); color: #FF7675; border-color: rgba(231,76,60,0.3); }
+
+/* ---- Image Scroller ---- */
+.event-scroller-wrap {
+    border-radius: 16px;
+    overflow: hidden;
+    background: rgba(0,0,0,0.3);
+    border: 1px solid rgba(255,255,255,0.07);
+    padding: 16px;
+}
+
+.scroller-label {
+    font-size: 0.78rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.event-slideshow {
+    width: 100%;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    aspect-ratio: 16 / 11;
+    background: #0a0a0a;
+}
+
+.slide-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    opacity: 0;
+    transform: scale(1.04);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    pointer-events: none;
+}
+
+.slide-img.active {
+    opacity: 1;
+    transform: scale(1);
+    pointer-events: auto;
+}
+
+/* Subtle progress bar on active slide */
+.event-slideshow::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #FF9500, #FF6B00);
+    animation: slideProgress 5s linear infinite;
+    z-index: 2;
+    border-radius: 0 3px 3px 0;
+}
+
+@keyframes slideProgress {
+    0%   { width: 0%; }
+    100% { width: 100%; }
+}
+
+/* Scroller dots */
+.scroller-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 14px;
+}
+
+.sdot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.sdot.active {
+    background: #FF9500;
+    width: 24px;
+    border-radius: 4px;
+}
+
+/* ---- Sessions Grid ---- */
+.industry-sub-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: left;
+}
+
+.industry-sessions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 24px;
+    text-align: left;
+}
+
+.session-card {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 28px;
+    border-radius: 18px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.session-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(255,255,255,0.15);
+}
+
+.session-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    color: #fff;
+    flex-shrink: 0;
+}
+
+.session-card h4 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #fff;
+    margin: 0;
+}
+
+.session-card p {
+    font-size: 0.9rem;
+    color: var(--text-dim);
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* ---- Takeaways ---- */
+.industry-takeaways {
+    padding: 40px;
+    border: 1px solid rgba(255, 215, 0, 0.12);
+    text-align: left;
+}
+
+.takeaway-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 30px;
+}
+
+.takeaway-header h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #fff;
+    margin: 0;
+}
+
+.takeaway-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 20px;
+}
+
+.takeaway-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    background: rgba(0,184,148,0.05);
+    border: 1px solid rgba(0,184,148,0.1);
+    padding: 16px 20px;
+    border-radius: 12px;
+    transition: transform 0.2s ease;
+}
+
+.takeaway-item:hover {
+    transform: translateX(4px);
+    border-color: rgba(0,184,148,0.25);
+}
+
+.takeaway-item i {
+    font-size: 1.2rem;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.takeaway-item p {
+    font-size: 0.9rem;
+    color: var(--text-dim);
+    line-height: 1.65;
+    margin: 0;
+}
+
+.takeaway-item strong {
+    color: #e0e0e0;
+}
+
+/* ---- Growth Pills ---- */
+.industry-growth {
+    text-align: center;
+}
+
+.growth-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.growth-pill {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 28px;
+    background: linear-gradient(135deg, rgba(41,151,255,0.1), rgba(90,200,250,0.08));
+    border: 1px solid rgba(41,151,255,0.25);
+    border-radius: 60px;
+    color: #5AC8FA;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.growth-pill i {
+    font-size: 1.3rem;
+}
+
+.growth-pill:hover {
+    transform: translateY(-4px) scale(1.03);
+    background: linear-gradient(135deg, rgba(41,151,255,0.18), rgba(90,200,250,0.14));
+    border-color: rgba(41,151,255,0.5);
+    box-shadow: 0 8px 24px rgba(41,151,255,0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .industry-hero-card {
+        flex-direction: column;
+        padding: 24px;
+    }
+    .industry-event-title {
+        font-size: 1.5rem;
+    }
+    .takeaway-grid {
+        grid-template-columns: 1fr;
+    }
+    .industry-takeaways {
+        padding: 24px;
+    }
+}

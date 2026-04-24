@@ -400,3 +400,53 @@ function typeEffect() {
 
 // Start typing animation after a delay
 setTimeout(typeEffect, 1500);
+
+// ===== Industry Exposure — Image Slideshow (5s per slide) =====
+(function () {
+    const slides = document.querySelectorAll('.slide-img');
+    const dots = document.querySelectorAll('.sdot');
+    if (!slides.length) return;
+
+    let current = 0;
+    let timer = null;
+
+    function goTo(index) {
+        slides[current].classList.remove('active');
+        dots[current].classList.remove('active');
+        current = index % slides.length;
+        slides[current].classList.add('active');
+        dots[current].classList.add('active');
+
+        // Restart the CSS progress bar animation
+        const slideshow = document.getElementById('eventSlideshow');
+        if (slideshow) {
+            slideshow.style.animation = 'none';
+            slideshow.offsetHeight; // trigger reflow
+            slideshow.style.animation = '';
+        }
+    }
+
+    function next() {
+        goTo(current + 1);
+    }
+
+    function startAutoplay() {
+        stopAutoplay();
+        timer = setInterval(next, 5000);
+    }
+
+    function stopAutoplay() {
+        if (timer) clearInterval(timer);
+    }
+
+    // Click dots to jump
+    dots.forEach((dot, i) => {
+        dot.addEventListener('click', () => {
+            goTo(i);
+            startAutoplay(); // restart timer on manual click
+        });
+    });
+
+    // Start
+    startAutoplay();
+})();
