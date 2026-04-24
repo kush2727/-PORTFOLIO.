@@ -1234,26 +1234,29 @@ a.project-card-new:hover {
     margin-bottom: 5px;
 }
 
-/* Hero Card — two-column layout */
+/* Hero Card — unified vertical layout */
 .industry-hero-card {
     display: flex;
-    gap: 40px;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    padding: 40px;
+    flex-direction: column;
+    gap: 0;
+    padding: 30px;
     border: 1px solid rgba(255, 149, 0, 0.15);
     margin-bottom: 60px;
+    overflow: hidden;
 }
 
-.industry-hero-left {
-    flex: 1;
-    min-width: 280px;
+.industry-hero-content {
+    padding: 10px 10px 0 10px;
     text-align: left;
 }
 
-.industry-hero-right {
-    flex: 1;
-    min-width: 280px;
+.event-slideshow {
+    width: 100%;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    aspect-ratio: 16 / 8;
+    background: #0a0a0a;
 }
 
 /* AWS Event Badge */
@@ -1358,14 +1361,7 @@ a.project-card-new:hover {
     gap: 6px;
 }
 
-.event-slideshow {
-    width: 100%;
-    position: relative;
-    border-radius: 12px;
-    overflow: hidden;
-    aspect-ratio: 16 / 11;
-    background: #0a0a0a;
-}
+
 
 .slide-img {
     position: absolute;
