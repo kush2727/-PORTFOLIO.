@@ -164,13 +164,35 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
+    text-align: left;
     position: relative;
     z-index: 1;
     scroll-margin-top: 80px;
     /* Offset for fixed navbar */
 }
+
+/* Education Centering Override */
+#education {
+    align-items: center;
+    text-align: center;
+}
+
+#education .glass-card {
+    text-align: center;
+}
+
+#education .glass-card div[style*="display: flex"] {
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+#education .glass-card h3,
+#education .glass-card p {
+    text-align: center !important;
+}
+
 
 .section-title {
     font-size: 2.5rem;
@@ -381,9 +403,15 @@ a {
 }
 
 .hero-content {
-    text-align: center;
+    text-align: left;
     max-width: 800px;
-    margin: 0 auto;
+    margin: 0;
+}
+
+.cta-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
 }
 
 .greeting {
@@ -603,7 +631,7 @@ a {
 
 /* Certification Cards */
 .cert-card {
-    text-align: left;
+    text-align: center;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -1110,12 +1138,19 @@ a.project-card-new:hover {
     .headline {
         font-size: 1.6rem;
         line-height: 1.3;
+        text-align: center;
     }
 
     .subtitle {
         font-size: 1rem;
         margin-bottom: 30px;
         padding: 0 10px;
+        text-align: center;
+    }
+
+    .hero-content {
+        text-align: center !important;
+        margin: 0 auto !important;
     }
 
     .cta-container {
@@ -1124,6 +1159,7 @@ a.project-card-new:hover {
         width: 100%;
         max-width: 280px;
         margin: 0 auto;
+        justify-content: center !important;
     }
 
     .primary-btn,
@@ -1159,12 +1195,15 @@ a.project-card-new:hover {
         padding: 24px 20px;
     }
 
-    /* Education, Experience, and Publication Cards - Centering on Mobile */
-    .glass-card div[style*="display: flex"] {
-        flex-direction: column !important;
-        align-items: center !important; /* Icons centered on mobile */
-        text-align: left !important;
-        gap: 15px !important;
+    #education .glass-card div[style*="display: flex"],
+    .cert-card {
+        align-items: center !important;
+        text-align: center !important;
+    }
+
+    #education .glass-card h3,
+    #education .glass-card p {
+        text-align: center !important;
     }
 
     #education .glass-card img,
