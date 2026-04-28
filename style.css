@@ -396,21 +396,23 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     position: relative;
     padding: 120px 20px 50px;
     /* Account for fixed nav */
     z-index: 1;
+    text-align: center;
 }
 
 .hero-content {
-    text-align: left;
+    text-align: center;
     max-width: 800px;
-    margin: 0;
+    margin: 0 auto;
 }
 
 .cta-container {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 20px;
 }
 
